@@ -1,0 +1,26 @@
+# Vagrant
+.vagrant
+
+# Intellij
+.idea/
+*.iml
+*.iws
+
+# Maven
+log/
+target/
+
+.vagrant/
+vagrant/rpms/
+
+dependency-reduced-pom.xml
+twitter4j.properties
+
+*.jar
+*.war
+
+.classpath/
+.settings/
+.project/
+
+.DS_Store

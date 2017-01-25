@@ -1,0 +1,10 @@
+{
+    "type": "record",
+    "name": "user",
+    "fields": [
+        {"name": "user_id", "type": "string"},
+        {"name": "event_id",  "type": "string"},
+        {"name": "event_timestamp", "type": "string"},
+        {"name": "event_type", "type": ["null", "string"]}
+     ]
+}

@@ -1,0 +1,5 @@
+Run consumer
+1. Send message through producer with old schema
+2. Check schema registry for subject "backwards-value"
+3. Send message through producer with new schema
+4. Check schema registry again to see new ID for subject "backwards-value"
