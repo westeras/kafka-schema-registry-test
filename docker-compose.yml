@@ -1,0 +1,21 @@
+version: '2'
+services:
+  zookeeper:
+    image: confluent/zookeeper
+    ports:
+      - '2181:2181'
+
+  kafka:
+    image: confluent/kafka
+    ports:
+      - '9092:9092'
+    depends_on:
+      - zookeeper
+
+  schemaregistry:
+    image: confluent/schema-registry
+    ports:
+      - '8081:8081'
+    depends_on:
+      - zookeeper
+
